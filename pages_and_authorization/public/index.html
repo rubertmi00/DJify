@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <title>DJ-ify</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel = "stylesheet" type = "text/css" href = "style.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>DJ-ify</h1>
+      </header>
+      <div id="login">
+        <a href="/login" class="btn btn-primary">Begin!</a>
+      </div>
+
+      <div id="loggedin">
+      </div>
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0-alpha.1/handlebars.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="spotifyScripts.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script>
+      setInterval(function(){$( "#tracklistSortable" ).sortable();}, 500);
+      setInterval(function(){$( "#tracklistStatic" ).sortable('disable');}, 500);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+body{
+    background-color: rgb(211, 255, 230);
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(0, 77, 0);
+    margin: 0px;
+    overflow-x: hidden;
+}
+header{
+    background: -webkit-linear-gradient(bottom left, black, rgb(0, 255, 13));
+    color: black;
+    font-size: 150%;
+    margin: 0 -9999rem;
+    padding: 0.25rem 9999rem;
+}
+h1{
+    text-align: right;
+}
+#login, #loggedin {
+    display: none;
+    text-align: center;
+}
+.text-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 500px;
+}
+ul{
+    list-style-type: none;
+    padding-left: 0px;
+    text-indent: 0%;
+}
+li{
+    font-weight: bolder;
+    line-height: 50px;
+    border-width: 4px;
+    border-color: black;
+    background-color: rgb(144, 146, 144);
+    border-style: inset;
+}
+.playlist{
+    cursor: pointer;
+}
+.track{
+    cursor: pointer;
+}
+.menuButton{
+    box-align: left;
+    background-color: black;
+    color: white;
+    transition-duration: 0.4s;
+    border-color: black;
+    margin: 10px;
+}
+.menuButton:hover {
+    background-color: white;
+    color: black;
+}
+.disabledButton{
+    box-align: left;
+    background-color: rgb(136, 135, 135);
+    color: black;
+    transition-duration: 0.4s;
+    border-color: black;
+    margin: 10px;
+}
+.correctAnswer{
+    background-color: rgb(99, 247, 99);
+}
+.wrongAnswer{
+    background-color: rgb(253, 98, 98);
+}
